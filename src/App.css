@@ -1,4 +1,4 @@
-* {
+*, html {
  box-sizing: border-box;
 }
 html, body {
@@ -10,7 +10,9 @@ html, body {
   background-color: #191919;
   font-family: 'Open Sans', sans-serif;
 }
-
+a {
+  color: #F2F4F3;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.App {
+.container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -69,7 +71,12 @@ address {
   text-decoration: none;
   color: #F2F4F3;
 }
-
+.sign-photos {
+  display: flex;
+  max-width: 350px;
+  max-height: 260px;
+  padding: 10px 10px;
+}
 button:hover {
   cursor: pointer;
   background-color: white;
@@ -82,6 +89,14 @@ button:hover {
   min-width: 300px;
   min-height: 300px;
   margin: 0 auto;
+}
+
+.photos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
 }
 
 @media only screen and (min-width: 760px) {
