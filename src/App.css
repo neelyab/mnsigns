@@ -1,120 +1,207 @@
 * {
   box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-}
-h1, h2, h3, h4 {
-  font-family: 'Adamina' serif;
-}
-
-body {
-  display: flex;
-  margin: 0;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #F2F4F3;
-  background-color: #191919;
-  font-family: 'Open Sans', sans-serif;
-}
-
-a {
-  color: #F2F4F3;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 }
 h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+body {
+  display: flex;
+  flex-flow: column;
+  font-size: 16px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.top-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-menu {
+  width: 100%;
+  background-color: darkgrey;
+}
+.bottom-menu ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.bottom-menu li {
+  font-size: 1.2em;
+}
+
+/********* HOMEPAGE *******/
+
+.image-carousel {
+  background-color:lightgrey;
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+.image-carousel button {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.about {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.products {
+  background-color: grey;
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.products button, .services button {
+  margin-right: 10px;
   margin-bottom: 10px;
 }
-.logo {
-  margin: 0 auto;
-  max-width: 200px;
-  margin-bottom: 50px;
 
-}
-
-.text-container {
+/************** PRODUCT PAGE ****************/
+.product-box {
+  width: 250px;
+  height: 250px;
+  background-color: grey;
+  margin: 10px 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 10px;
-  background-color: rgba(243, 241, 241, 5%);
-  border-radius: 10px;
-  margin-top: 15px;
-  max-width: 90%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-address {
-  margin-bottom: 15px;
+.product-box button {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
-#phone-number {
-
-  color: #F2F4F3;
-}
-.email-us {
-  width: 100px;
-  height: 45px;
-  font-size: 1.2em;
-  background-color: #A30000;
-  border: none;
-  border-radius: 5px;
-  color: #F2F4F3;
-  margin-bottom: 15px;
-  padding: 5px 5px;
-}
-
-.email-us a {
-  text-decoration: none;
-  color: #F2F4F3;
-}
-.sign-photos {
-  display: flex;
-  max-width: 350px;
-  max-height: 260px;
-  padding: 10px 10px;
-}
-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #191919;
-  border-radius: 5px;
-}
-.map {
-  margin-top: 20px;
-  max-width: 400px;
-  max-height: 400px;
-  min-width: 300px;
-  min-height: 300px;
-  margin: 0 auto;
-}
-
-.photos {
+.product-container {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 760px) {
+/**************** SERVICES SECTION HOME PAGE ***************/
+.services {
+  background-color: lightgrey;
+    width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
 
-  .text-container {
-    padding: 50px 100px;
-    max-width: 70%;
-  }
+footer {
+  background-color: #8B939C;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+}
+.address-info, .links {
+  border-bottom: black solid 1px;
+
+}
+footer p, footer h4 {
+  line-height: 5px;
+  text-align: left;
+  min-width: 150px;
+}
+
+
+/******************* REQUEST A QUOTE PAGE ********/
+.form-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow: column;
+   max-width: 800px;
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+.request-quote {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  margin: 0 auto;
+  min-height: 600px;
+}
+.request-quote labels, .request-quote input {
+  max-width: 250px;
+  margin-bottom: 5px;
+}
+
+/************** DESKTOP STYLES *****************/
+
+@media only screen and (min-width: 600px) {
+  .bottom-menu ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  align-items: center;
+}
+.top-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image-carousel, .about, .products, .services {
+  max-width: 1200px;
+}
+footer {
+  background-color: #8B939C;
+  width: 100%;
+  min-height: 100px;
+}
+.footer-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5px 5px;
+  max-width: 1200px;
+  width: 100%;
+}
+.address-info, .links {
+  border-bottom: none;
+}
+.product-container {
+  align-items: flex-start;
+  min-height: 800px;
+}
 }
