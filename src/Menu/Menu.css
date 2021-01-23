@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  .top-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .bottom-menu {
+    width: 100%;
+    background-color: darkgrey;
+  }
+  .bottom-menu ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .bottom-menu li {
+    font-size: 1.2em;
+  }

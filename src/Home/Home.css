@@ -1,0 +1,23 @@
+
+.about {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .products {
+    background-color: grey;
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  .products button, .services button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
