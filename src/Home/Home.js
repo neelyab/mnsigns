@@ -6,7 +6,9 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <div className="image-carousel">
                 <ImageCarousel/>
+                </div>
                 <div class="about">
                     <h2>About</h2>
                     <p>

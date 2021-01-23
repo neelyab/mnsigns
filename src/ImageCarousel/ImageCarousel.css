@@ -1,12 +1,12 @@
 .image-carousel {
-    background-color:lightgrey;
     width: 90%;
-    min-height: 350px;
+    min-height: 250px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-top: 20px;
+    background-color: transparent;
   
   }
   .image-carousel button {
@@ -15,3 +15,42 @@
     margin-right: 20px;
     margin-bottom: 20px;
   }
+
+  .image {
+    max-width: 650px;
+    width: 100%;
+
+  }
+
+  .right-arrow {
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      font-size: 3rem;
+      z-index: 10;
+      cursor: pointer;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+}
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+@media only screen and (min-width: 950px){
+    .image-carousel {
+        min-height: 490px;
+    }
+}
