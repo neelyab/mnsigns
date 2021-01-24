@@ -25,6 +25,7 @@ class ImageCarousel extends Component {
         console.log(this.state.current)
     }
     nextSlide = () => {
+      
         const length = ImageData.length;
 
         if(this.state.current === length - 1) {
@@ -39,7 +40,9 @@ class ImageCarousel extends Component {
         console.log(this.state.current)
     }
     componentDidMount = () => {
-            
+        setInterval(() => {
+            this.nextSlide();
+        }, 5000);
     }
     render(){
        const carouselImage = ImageData.map((im, index ) => {

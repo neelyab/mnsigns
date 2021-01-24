@@ -1,5 +1,6 @@
 .image-carousel {
-    width: 90%;
+    margin-top: 20px;
+    width: 100%;
     min-height: 250px;
     display: flex;
     justify-content: center;
@@ -17,13 +18,18 @@
   }
 
   .image {
-    max-width: 650px;
+      margin-top: 20px;
+    max-width: 1400px;
+    max-height: 500px;
+
     width: 100%;
+    object-fit: cover;
 
   }
 
   .right-arrow {
       position: absolute;
+      opacity: 50%;
       top: 50%;
       right: 32px;
       font-size: 3rem;
@@ -32,11 +38,16 @@
   }
   .left-arrow {
     position: absolute;
+    opacity: 50%;
     top: 50%;
     left: 32px;
     font-size: 3rem;
     z-index: 10;
     cursor: pointer;
+}
+.left-arrow:hover, .right-arrow:hover {
+    opacity: 80%;
+    transition-duration: 1s ease;
 }
 .slide {
     opacity: 0;
