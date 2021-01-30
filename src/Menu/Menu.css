@@ -14,16 +14,68 @@ header {
   .bottom-menu {
     width: 100%;
     background-color: darkgrey;
+    display: flex;
+    justify-content: space-around;
   }
   .bottom-menu ul {
     width: 100%;
     list-style: none;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    /* flex-flow: column; */
+    justify-content: space-around;
     align-items: center;
     padding: 0;
+    width: 50%;
+
+  }
+  .bottom-menu a {
+    text-decoration: none;
   }
   .bottom-menu li {
     font-size: 1.2em;
+  }
+.burger {
+  cursor: pointer;
+}
+ 
+
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .menu {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: white;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+
+    }
+    .bottom-menu ul {
+      width: 80%;
+    }
+    .bottom-menu li {
+      /* opacity: 0; */
+    }
+    .burger div {
+      width: 25px;
+      height: 5px;
+      background-color: black;
+      margin: 5px;
+    }
+    .bottom-menu {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  }
+
+  .nav-active {
+    transform: translateX(0%);
   }

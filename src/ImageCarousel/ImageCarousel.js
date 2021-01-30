@@ -11,6 +11,7 @@ class ImageCarousel extends Component {
         }
     }
     prevSlide = () => {
+        // proceed to previous slide
         const length = ImageData.length;
 
         if(this.state.current === 0) {
@@ -22,10 +23,9 @@ class ImageCarousel extends Component {
                 current: this.state.current -1
             })
         }
-        console.log(this.state.current)
     }
     nextSlide = () => {
-      
+      // proceed to next slide
         const length = ImageData.length;
 
         if(this.state.current === length - 1) {
@@ -37,14 +37,15 @@ class ImageCarousel extends Component {
                 current: this.state.current+1
             })
         }
-        console.log(this.state.current)
     }
     componentDidMount = () => {
+        // interval for image carousel
         setInterval(() => {
             this.nextSlide();
         }, 5000);
     }
     render(){
+        // retrieve urls for each image
        const carouselImage = ImageData.map((im, index ) => {
             const imageUrl = Object.values(im.image)[0]
             return (
