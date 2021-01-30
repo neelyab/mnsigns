@@ -16,8 +16,16 @@ class Menu extends Component {
                 active: !currentState
             }
             );
+       
     }
     render(){
+        if (this.state.active === true) {
+            const navLinks = document.querySelectorAll('ul.menu li');
+            // animates the links 
+            navLinks.forEach((link, index) => {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 2}s`;
+            })
+        }
         return(
             <header>
                 <div className="top-menu">
@@ -35,7 +43,7 @@ class Menu extends Component {
                 </div>
 
                 <div className='bottom-menu'>
-                    <ul className={this.state.active ? 'nav-active menu' : 'menu'}>
+                    <ul className={this.state.active ? 'nav-active menu' : 'menu'} onClick={this.toggleClass} >
                         <li><a href="/">Home</a></li>
                         <li><a href="./products.html">Products</a></li>
                         <li>Services</li>
