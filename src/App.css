@@ -52,25 +52,7 @@ body {
   margin-bottom: 20px;
 }
 
-footer {
-  background-color: #8B939C;
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 5px;
-}
-.address-info, .links {
-  border-bottom: black solid 1px;
 
-}
-footer p, footer h4 {
-  line-height: 5px;
-  text-align: left;
-  min-width: 150px;
-}
 
 
 /******************* REQUEST A QUOTE PAGE ********/
@@ -116,25 +98,10 @@ footer p, footer h4 {
 .image-carousel, .about, .products, .services {
   max-width: 1200px;
 }
-footer {
-  background-color: #8B939C;
-  width: 100%;
-  min-height: 100px;
-}
-.footer-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 5px 5px;
-  max-width: 1200px;
-  width: 100%;
-}
-.address-info, .links {
-  border-bottom: none;
-}
+
 .product-container {
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   min-height: 800px;
 }
 }
