@@ -1,12 +1,29 @@
 
 .about {
     text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    min-width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    background: #190C0C;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
-  
+  .about h2 {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 150px
+  }
+  .about p {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .home {
+    width: 100%;
+  }
   .products {
     background-color: grey;
     width: 90%;
@@ -20,4 +37,18 @@
   .products button, .services button {
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 768px){
+      .about {
+        flex-direction: column;
+      
+      }
+      .about h2, .about p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
   }

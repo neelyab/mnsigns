@@ -5,7 +5,7 @@ import './Home.css';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="home">
                 <div className="image-carousel">
                 <ImageCarousel/>
                 </div>

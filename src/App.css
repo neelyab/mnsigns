@@ -80,7 +80,7 @@ body {
 
 /************** DESKTOP STYLES *****************/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1030px) {
   .bottom-menu ul {
   width: 100%;
   list-style: none;
@@ -95,7 +95,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.image-carousel, .about, .products, .services {
+.image-carousel, .products, .services {
   max-width: 1200px;
 }
 

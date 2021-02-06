@@ -45,7 +45,8 @@ footer {
   @media only screen and (min-width: 758px){
 
     footer {
-        background-color: #8B939C;
+        background-color: #190C0C;
+        color: #FFFFFF;
       }
       .footer-container {
         display: flex;
@@ -66,7 +67,7 @@ footer {
         width: 40%;
       
       }
-      .popular-products {
+      .popular-products, .social-icons {
         width: 40%;
       }
       .address-info p, .links p, .popular-products p, .popular-products h4 {
