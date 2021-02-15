@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Menu.css';
 import logo from '../../src/signs4less.jpg'
+import {Link} from 'react-router-dom';
 
 class Menu extends Component {
     constructor(props){
@@ -45,7 +46,7 @@ class Menu extends Component {
                 <div className='bottom-menu'>
                     <ul className={this.state.active ? 'nav-active menu' : 'menu'} onClick={this.toggleClass} >
                         <li><a href="/">Home</a></li>
-                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./products">Products</a></li>
                         <li>Services</li>
                         <li>Contact</li>
                         <li>Portfolio</li>
