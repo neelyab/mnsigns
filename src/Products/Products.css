@@ -40,7 +40,7 @@
 }
 .centered-text {
     color: white;
-    background: linear-gradient(#B70D01, black);
+    background: linear-gradient(#B70D01,#5C0701);
     padding: 5px 10px;
     border-radius: 10px;
     font-weight: bold;

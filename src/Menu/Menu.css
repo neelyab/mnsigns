@@ -10,12 +10,31 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
+  }
+
+  .quote-button {
+    background: linear-gradient(#B70D01, #5C0701);
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+  }
+
+  .number {
+    font-size: 2em;
+    font-weight: bold;
   }
   .bottom-menu {
     width: 100%;
-    background-color: darkgrey;
+    background: linear-gradient(#B70D01, #5C0701);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 200px;
+    color: white;
+    min-height: 60px;
   }
   .bottom-menu ul {
     width: 100%;
@@ -30,6 +49,7 @@ header {
   }
   .bottom-menu a {
     text-decoration: none;
+    color: white;
   }
   .bottom-menu li {
     font-size: 1.2em;

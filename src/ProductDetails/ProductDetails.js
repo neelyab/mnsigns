@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 class ProductDetails extends Component {
     render(){
-        const productId = parseInt(this.props.match.params.productId)
+        const productId = this.props.match.params.productId;
         const productInfo = ProductData.find(p => p.id === productId)
         const images = productInfo.images.map((image, i) =>
              {

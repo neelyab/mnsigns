@@ -6,6 +6,7 @@ import Products from './Products/Products';
 import Footer from './Footer/Footer';
 import {Route} from 'react-router-dom';
 import ProductDetails from './ProductDetails/ProductDetails';
+import Contact from './Contact/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="container">
        <Route path='/' component={Menu}/>
        <Route exact path='/' component={Home}/> 
+       <Route path='/contact' component={Contact}/>
       <Route path='/products' exact component = {Products}/> 
       <Route path='/product/:productId' component = {ProductDetails} />
       <Route path='/' component={Footer}/>

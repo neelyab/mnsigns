@@ -26,14 +26,14 @@ class Footer extends Component {
                 </div>
                 </div>
                 <div className="links">
-                <p>Contact Us</p>
+                <a href="mailto:mnsigns@msn.com"><p>Contact Us</p></a>
                 <p>Request A Quote</p>
                 </div>
                 <div className="popular-products">
                     <h4>Popular Products</h4>
-                    <p>Sign Wraps</p>
-                    <p>Custom Signs</p>
-                    <p>T-shirts</p>
+                    <Link to="/product/vehicle-wraps"><p>Vehicle Wraps</p></Link>
+                    <Link to="/product/panel-signs"><p>Panel Signs</p></Link>
+                    <Link to="/product/apparel"><p>Custom Apparel</p></Link>
                 </div>
                 </div>
             </footer>

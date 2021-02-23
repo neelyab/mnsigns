@@ -1,0 +1,30 @@
+.map {
+
+    width: 300px;
+    border: 0;
+
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.contact-container h2 {
+    padding-top: 10px;
+}
+
+.contact-container p {
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1048px){
+    .map {
+        width: 500px;
+        height: 400px;
+    }
+}

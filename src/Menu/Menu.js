@@ -31,24 +31,22 @@ class Menu extends Component {
             <header>
                 <div className="top-menu">
                     <div className="logo">
-                        <img alt="mikes signs for less logo" src={logo}/>
+                        <Link to="/"><img alt="mikes signs for less logo" src={logo}/></Link>
                     </div>
 
                     <div className="phone-number">
-                        <p>555-5555</p>
+                        <p className="number">(540) 548-2940</p>
                     </div>
 
-                    <a href="./quote.html"><button>Quote
+                    <a href="./request-quote"><button className="quote-button">Request A Quote
                     </button>
                     </a>
                 </div>
 
                 <div className='bottom-menu'>
                     <ul className={this.state.active ? 'nav-active menu' : 'menu'} onClick={this.toggleClass} >
-                        <li><a href="/">Home</a></li>
-                        <Link to='/products'><li>Products</li></Link>
-                        <li>Services</li>
-                        <li>Contact</li>
+                        <Link to='/products'><li>Products and Services</li></Link>
+                        <Link to='/contact'><li>Contact</li></Link>
                         <li>Portfolio</li>
                     </ul>
                     <div className='burger'
