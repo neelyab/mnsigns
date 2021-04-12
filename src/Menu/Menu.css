@@ -11,12 +11,13 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    padding: 0 5px;
   }
 
   .quote-button {
     background: linear-gradient(#B70D01, #5C0701);
     border: none;
-    padding: 10px 10px;
+    padding: 5px 10px;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -56,9 +57,9 @@ header {
   }
 .burger {
   cursor: pointer;
+  margin-top: 10px;
 }
  
-
   @media screen and (max-width: 1025px) {
     
     .menu {
@@ -74,7 +75,14 @@ header {
       width: 60%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
+      color: black;
 
+    }
+    .bottom-menu a {
+      color: black;
+    }
+    .number {
+      display: none;
     }
     .bottom-menu ul {
       width: 80%;
@@ -85,7 +93,7 @@ header {
     .burger div {
       width: 25px;
       height: 5px;
-      background-color: black;
+      background-color: white;
       margin: 5px;
     }
     .bottom-menu {

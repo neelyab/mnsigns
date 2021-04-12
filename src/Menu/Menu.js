@@ -47,7 +47,7 @@ class Menu extends Component {
                     <ul className={this.state.active ? 'nav-active menu' : 'menu'} onClick={this.toggleClass} >
                         <Link to='/products'><li>Products and Services</li></Link>
                         <Link to='/contact'><li>Contact</li></Link>
-                        <li>Portfolio</li>
+                        <li>Request a Quote</li>
                     </ul>
                     <div className='burger'
                         onClick={this.toggleClass} >

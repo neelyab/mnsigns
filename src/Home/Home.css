@@ -40,17 +40,28 @@
   }
   .products {
     background-color: grey;
+    background: url('https://i.imgur.com/Ci28z7S.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 90%;
-    height: 350px;
+    height: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-bottom: 20px;
   }
-  .products button, .services button {
+  .products-button {
     margin-right: 10px;
     margin-bottom: 10px;
+    background:#B70D01;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+
   }
 
   .products-services-section {
@@ -68,5 +79,11 @@
         justify-content: center;
         align-items: center;
         margin: 0;
+      }
+      .products {
+        background: url('https://i.imgur.com/F1rU4DH.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
   }
