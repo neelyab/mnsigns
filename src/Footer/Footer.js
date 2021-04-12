@@ -27,7 +27,7 @@ class Footer extends Component {
                 </div>
                 <div className="links">
                 <a href="mailto:mnsigns@msn.com"><p>Contact Us</p></a>
-                <p>Request A Quote</p>
+                <Link to="/request-quote"><p>Request A Quote</p></Link>
                 </div>
                 <div className="popular-products">
                     <h4>Popular Products</h4>

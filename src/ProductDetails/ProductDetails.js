@@ -15,7 +15,7 @@ class ProductDetails extends Component {
         })
         let list;
        if (productInfo.list ) {
-           list = productInfo.list.map(item=> <li>{item}</li>) 
+           list = productInfo.list.map((item, i)=> <li key={i}>{item}</li>) 
        } else {
            list = undefined;
        }

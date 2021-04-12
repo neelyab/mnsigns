@@ -15,7 +15,7 @@ class Contact extends Component {
                 <h2>Phone Number</h2>
                 <p>(540) 548-2940</p>
                 <div className="map-widget">
-                <iframe className="map" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12526.18557627258!2d-77.5539889!3d38.2900066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9e161f4020e62ea8!2sMike&#39;s%20Signs%204%20Less!5e0!3m2!1sen!2sus!4v1614093995498!5m2!1sen!2sus" ></iframe>
+                <iframe className="map" title="map" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12526.18557627258!2d-77.5539889!3d38.2900066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9e161f4020e62ea8!2sMike&#39;s%20Signs%204%20Less!5e0!3m2!1sen!2sus!4v1614093995498!5m2!1sen!2sus" ></iframe>
                 </div>
             </div>
         )

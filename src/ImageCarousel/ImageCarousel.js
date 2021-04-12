@@ -44,6 +44,9 @@ class ImageCarousel extends Component {
             this.nextSlide();
         }, 5000);
     }
+    componentWillUnmount(){
+        clearInterval();
+    }
     render(){
         // retrieve urls for each image
        const carouselImage = ImageData.map((im, index ) => {

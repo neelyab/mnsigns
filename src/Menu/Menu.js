@@ -38,16 +38,15 @@ class Menu extends Component {
                         <p className="number">(540) 548-2940</p>
                     </div>
 
-                    <a href="./request-quote"><button className="quote-button">Request A Quote
-                    </button>
-                    </a>
+                    <Link to="/request-quote"><button className="quote-button">Request A Quote
+                    </button></Link>
                 </div>
 
                 <div className='bottom-menu'>
                     <ul className={this.state.active ? 'nav-active menu' : 'menu'} onClick={this.toggleClass} >
                         <Link to='/products'><li>Products and Services</li></Link>
                         <Link to='/contact'><li>Contact</li></Link>
-                        <li>Request a Quote</li>
+                        <Link to='/request-quote'><li>Request a Quote</li></Link>
                     </ul>
                     <div className='burger'
                         onClick={this.toggleClass} >
