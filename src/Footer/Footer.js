@@ -33,7 +33,7 @@ class Footer extends Component {
                     <h4>Popular Products</h4>
                     <Link to="/product/vehicle-wraps"><p>Vehicle Wraps</p></Link>
                     <Link to="/product/panel-signs"><p>Panel Signs</p></Link>
-                    <Link to="/product/apparel"><p>Custom Apparel</p></Link>
+                    <Link to="/product/promotional-products"><p>Promotional Products</p></Link>
                 </div>
                 </div>
             </footer>

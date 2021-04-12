@@ -25,12 +25,13 @@ footer a {
 }
 
 footer {
-    background-color: #8B939C;
+  background-color: #190C0C;
+  color: #FFFFFF;
     width: 100%;
     padding: 5px 5px;
   }
   .address-info, .links {
-    border-bottom: black solid 1px;
+    border-bottom: #fff solid 1px;
   
   }
   footer p, footer h4 {
@@ -47,10 +48,7 @@ footer {
 
   @media only screen and (min-width: 758px){
 
-    footer {
-        background-color: #190C0C;
-        color: #FFFFFF;
-      }
+
       .footer-container {
         display: flex;
         flex-flow: row;
