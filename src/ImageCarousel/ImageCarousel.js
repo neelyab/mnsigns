@@ -7,8 +7,9 @@ class ImageCarousel extends Component {
     constructor(props){
         super(props)
         this.state = {
-            current: 0
+            current: 0,
         }
+        this.sliderInterval= null;
     }
     prevSlide = () => {
         // proceed to previous slide
@@ -40,12 +41,12 @@ class ImageCarousel extends Component {
     }
     componentDidMount = () => {
         // interval for image carousel
-        setInterval(() => {
+        this.sliderInterval = setInterval(() => {
             this.nextSlide();
         }, 5000);
     }
     componentWillUnmount(){
-        clearInterval();
+        clearInterval(this.sliderInterval);
     }
     render(){
         // retrieve urls for each image

@@ -8,6 +8,7 @@ class Home extends Component {
     render() {
         return (
             <div className="home">
+                <h1 className="hidden-home-title"> Mikes Signs For Less </h1> 
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Custom Signs, Banners, Vehicle Wraps | Mikes Signs 4 Less | Fredericksburg VA </title>
