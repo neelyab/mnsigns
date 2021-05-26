@@ -1,5 +1,6 @@
 .product-thumbnails {
     width: 90%;
+    opacity: 0.5;
 }
 .product-page {
     display: flex;
