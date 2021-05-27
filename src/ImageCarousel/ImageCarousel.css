@@ -1,7 +1,7 @@
 .image-carousel {
     margin-top: 20px;
     width: 100%;
-    min-height: 250px;
+    min-height: 305px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
 
   .right-arrow {
       position: absolute;
-      opacity: 50%;
+      opacity: 0.5;
       top: 50%;
       right: 32px;
       font-size: 3rem;
@@ -38,7 +38,7 @@
   }
   .left-arrow {
     position: absolute;
-    opacity: 50%;
+    opacity: 0.5;
     top: 50%;
     left: 32px;
     font-size: 3rem;
@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 .left-arrow:hover, .right-arrow:hover {
-    opacity: 80%;
+    opacity: 0.80;
     transition-duration: 1s ease;
 }
 .slide {
@@ -62,6 +62,6 @@
 
 @media only screen and (min-width: 950px){
     .image-carousel {
-        min-height: 490px;
+        min-height: 540px;
     }
 }
