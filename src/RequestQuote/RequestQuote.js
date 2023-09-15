@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './RequestQuote.css';
 import emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
+import config from '../config';
 
 class RequestQuote extends Component {
         constructor(props) {
@@ -15,11 +16,11 @@ class RequestQuote extends Component {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_yynnpew', 'template_s6dsvyl', e.target, 'user_DEKpP7HbUkuZX7llgJ1zd')
+      emailjs.sendForm(config.SERVICE_ID, config.TEMPLATE_ID, e.target, config.PUBLIC_KEY)
         .then(() => {
             this.setState({success: true})
         }, () => {
-            this.setState({error:true})
+            this.setState({error:true});
         });
         e.target.reset();
     }
