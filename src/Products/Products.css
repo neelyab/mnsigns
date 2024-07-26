@@ -1,72 +1,72 @@
 .product-thumbnails {
-    width: 90%;
-    opacity: 0.5;
+  width: 90%;
+  opacity: 0.5;
+  margin-bottom: 20px;
 }
 .product-page {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
 }
-
+.product-page h1 {
+  padding-top: 20px;
+}
 .product-category {
-    width: 90%;
-    list-style: none;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
 }
 .product-category a {
-    text-decoration: none;
-
-
+  text-decoration: none;
 }
 .product-list {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
 }
 .text-container {
-    position: relative;
+  position: relative;
   text-align: center;
   color: white;
 }
 .centered-text {
-    color: white;
-    background: linear-gradient(#B70D01,#5C0701);
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: white;
+  background: linear-gradient(#b70d01, #5c0701);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-@media only screen and (min-width: 768px){
-.product-list {
+
+@media only screen and (min-width: 768px) {
+  .product-list {
     justify-content: flex-start;
     flex-flow: row wrap;
-
-    /* margin-left: auto; */
-}
-.product-category {
+  }
+  .product-category {
     width: 30%;
-}
-.product-thumbnails {
+  }
+  .product-thumbnails {
     width: 90%;
     margin: 20px 0;
+  }
 }
-
-}
-@media only screen and (min-width: 1040px){
-    .centered-text {
-        font-size: 1.6em;
-    }
+@media only screen and (min-width: 1040px) {
+  .centered-text {
+    font-size: 1.6em;
+  }
 }

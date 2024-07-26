@@ -11,7 +11,7 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    padding: 0 5px;
+    padding: 15px 5px;
   }
 
   .quote-button {
@@ -42,12 +42,16 @@ header {
     width: 100%;
     list-style: none;
     display: flex;
-    /* flex-flow: column; */
     justify-content: space-around;
     align-items: center;
     padding: 0;
     width: 90%;
-
+  }
+  .bottom-menu ul li, .quote-button {
+    transition: all .4s ease-in;
+  }
+  .bottom-menu ul li:hover, .quote-button:hover {
+    transform: scale(1.1);
   }
   .bottom-menu a {
     text-decoration: none;

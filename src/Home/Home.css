@@ -1,96 +1,100 @@
-
 .hidden-home-title {
   display: none;
 }
 
 .about {
-    text-align: center;
-    min-width: 100%;
-    padding: 20px 20px;
-    margin: 20px 0 0px 0;
-    color: #ffffff;
-    background: #190C0C;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  text-align: center;
+  min-width: 100%;
+  padding: 80px 20px;
+  margin: 20px 0 0px 0;
+  color: #ffffff;
+  background: #190c0c;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.about h2 {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 150px;
+}
+.about p {
+  width: 40%;
+  margin: 0 auto;
+  line-height: 2em;
+}
+.about-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.about-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.home {
+  width: 100%;
+}
+.products-and-services {
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+}
+.products {
+  background-color: grey;
+  background: url("https://i.imgur.com/Ci28z7S.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.products-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #b70d01;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.products-button:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.products-services-section {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
   }
-  .about h2 {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 150px
-  }
+  .about h2,
   .about p {
-    width: 40%;
-    margin: 0 auto;
-  }
-  .about-container {
+    width: 100%;
     display: flex;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
-  }
-  .gradient-border-bottom {
-    min-height: 30px;
-    min-width: 100%;
-    background: linear-gradient(#B70D01, #5C0701);
-    margin-top: 0;
-  }
-
-  .home {
-    width: 100%;
+    margin: 0;
   }
   .products {
-    background-color: grey;
-    background: url('https://i.imgur.com/Ci28z7S.jpg');
-    background-size: cover;
+    background: url("https://i.imgur.com/F1rU4DH.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    width: 90%;
-    height: 400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    background-size: cover;
   }
-  .products-button {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    background:#B70D01;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-
-  }
-  .products-button:hover {
-    cursor: pointer;
-  }
-
-  .products-services-section {
-    text-align: center;
-    margin: 20px 0 20px 0;
-  }
-  @media only screen and (max-width: 768px){
-      .about {
-        flex-direction: column;
-      
-      }
-      .about h2, .about p {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-      }
-      .products {
-        background: url('https://i.imgur.com/F1rU4DH.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-  }
+}

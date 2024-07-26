@@ -31,7 +31,7 @@
       position: absolute;
       opacity: 0.5;
       top: 50%;
-      right: 32px;
+      right: 15%;
       font-size: 3rem;
       z-index: 10;
       cursor: pointer;
@@ -40,7 +40,7 @@
     position: absolute;
     opacity: 0.5;
     top: 50%;
-    left: 32px;
+    left: 15%;
     font-size: 3rem;
     z-index: 10;
     cursor: pointer;
@@ -63,5 +63,11 @@
 @media only screen and (min-width: 950px){
     .image-carousel {
         min-height: 540px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .left-arrow, .right-arrow {
+        display: none;
     }
 }
